@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Transformation | Alex Prime</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav style="margin-bottom: 40px;"><a href="index.html" style="color: var(--accent-lime); text-decoration: none; font-weight: 700;">← CANCEL</a></nav>
+
+        <div class="info-card">
+            <h1 style="font-size: 2.2rem; margin-bottom: 10px;">Secure Your Spot</h1>
+            <p style="color: var(--text-gray); margin-bottom: 30px;">Leave your details below. I personally review every application to ensure we are a good fit for elite coaching.</p>
+
+            <form id="lead-form" style="display: grid; gap: 20px;">
+                <div>
+                    <label style="display: block; font-size: 0.75rem; color: var(--accent-lime); text-transform: uppercase; margin-bottom: 8px; font-weight: 800;">Full Name</label>
+                    <input type="text" required placeholder="John Doe" style="width: 100%; padding: 18px; background: #000; border: 1px solid var(--border); color: white; border-radius: 12px;">
+                </div>
+
+                <div>
+                    <label style="display: block; font-size: 0.75rem; color: var(--accent-lime); text-transform: uppercase; margin-bottom: 8px; font-weight: 800;">Email Address</label>
+                    <input type="email" required placeholder="john@example.com" style="width: 100%; padding: 18px; background: #000; border: 1px solid var(--border); color: white; border-radius: 12px;">
+                </div>
+
+                <div>
+                    <label style="display: block; font-size: 0.75rem; color: var(--accent-lime); text-transform: uppercase; margin-bottom: 8px; font-weight: 800;">Instagram Handle or Phone</label>
+                    <input type="text" required placeholder="@yourhandle" style="width: 100%; padding: 18px; background: #000; border: 1px solid var(--border); color: white; border-radius: 12px;">
+                </div>
+
+                <div>
+                   <label style="display: block; font-size: 0.75rem; color: var(--accent-lime); text-transform: uppercase; margin-bottom: 8px; font-weight: 800;">Selected Service</label>
+                   <div style="position: relative;">
+                       <select name="service" required style="width: 100%; padding: 18px; background: #000; border: 1px solid var(--border); color: white; border-radius: 12px; appearance: none; cursor: pointer; font-family: 'Inter', sans-serif;">
+                         <option value="" disabled selected>Choose your program...</option>
+                         <option value="shredded-protocol">Shredded Protocol 2.0 (Masterclass)</option>
+                         <option value="vip-mentorship">VIP Online Mentorship (1:1 Coaching)</option>
+                         <option value="biomechanics-audit">Biomechanics Form Audit (Video Breakdown)</option>
+                         <option value="general-inquiry">General Fitness Inquiry</option>
+                        </select>
+                        
+                        <div style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); pointer-events: none; color: var(--accent-lime);">
+                        ▼</div>
+                   </div>
+                </div>
+
+                <button type="submit" class="btn-main" style="border: none; cursor: pointer; width: 100%;">Submit Application</button>
+            </form>
+
+
+            <div style="margin-top: 30px; text-align: center;">
+              <p style="color: var(--text-gray); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">Or contact me directly:</p>
+                <div style="display: flex; justify-content: center; gap: 30px;">
+                 <!-- Instagram -->
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <!-- Telegram -->
+                    <a href="https://t.me" target="_blank" class="social-icon">
+                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me" target="_blank" class="social-icon">
+                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L21 3.5Z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
